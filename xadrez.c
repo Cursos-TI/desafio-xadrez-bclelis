@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 // Desafio de Xadrez - MateCheck
-// Este código simula a movimentação de três peças de xadrez: Torre, Bispo e Rainha.
-// Cada peça utiliza uma estrutura de repetição diferente (for, while, do-while).
+// Simula a movimentação de Torre, Bispo, Rainha e Cavalo no tabuleiro
+// Cada peça usa estruturas de repetição diferentes
 
 int main() {
-    // Nível Novato - Movimentação das Peças
+    // Declaração de constantes para os movimentos
     const int movimentosTorre = 5;
     const int movimentosBispo = 5;
     const int movimentosRainha = 8;
+    const int movimentosBaixo = 2;   // Cavalo
+    const int movimentosEsquerda = 1; // Cavalo
 
     // =======================
     // Movimentação da Torre
     // =======================
-    // A torre se move em linha reta. Aqui, ela se move 5 casas para a direita usando for.
     printf("Movimento da Torre (5 casas para a Direita):\n");
     for (int i = 1; i <= movimentosTorre; i++) {
         printf("Direita\n");
@@ -24,7 +25,6 @@ int main() {
     // =======================
     // Movimentação do Bispo
     // =======================
-    // O bispo se move em diagonal. Aqui, simula 5 casas para cima e à direita usando while.
     printf("Movimento do Bispo (5 casas na Diagonal Cima Direita):\n");
     int j = 1;
     while (j <= movimentosBispo) {
@@ -37,13 +37,34 @@ int main() {
     // =======================
     // Movimentação da Rainha
     // =======================
-    // A rainha se move em todas as direções. Aqui, simula 8 casas para a esquerda usando do-while.
     printf("Movimento da Rainha (8 casas para a Esquerda):\n");
     int k = 1;
     do {
         printf("Esquerda\n");
         k++;
     } while (k <= movimentosRainha);
+
+    printf("\n");
+
+    // =======================
+    // Movimentação do Cavalo
+    // =======================
+    // O Cavalo se move em "L": 2 casas para Baixo + 1 casa para Esquerda
+    // Usamos um loop for para o movimento vertical e um loop while aninhado para o movimento horizontal
+
+    printf("Movimento do Cavalo (2 casas para Baixo e 1 para Esquerda):\n");
+
+    for (int i = 0; i < movimentosBaixo; i++) {
+        printf("Baixo\n");
+        int passo = 0;
+
+        // Loop aninhado opcional (poderia ser parte fora do for também)
+        // Neste caso, o movimento da esquerda ocorre uma única vez
+        while (passo == 0 && i == movimentosBaixo - 1) {
+            printf("Esquerda\n");
+            passo++;
+        }
+    }
 
     return 0;
 }
