@@ -23,8 +23,10 @@ Durante o desenvolvimento, as seguintes peças e comportamentos foram simulados:
 
    cd desafio-xadrez-bclelis
 3. **Compile o código com GCC**:
+
    gcc xadrez.c -o xadrez
-4. **Execute o programa**:
+5. **Execute o programa**:
+
    ./xadrez
 
 ## 🧠 Tecnologias e Conceitos Aplicados
