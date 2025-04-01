@@ -18,6 +18,7 @@ Durante o desenvolvimento, as seguintes peças e comportamentos foram simulados:
 ## ⚙️ Como Executar
 
 1. **Clone o repositório**:
+
    git clone https://github.com/Cursos-TI/desafio-xadrez-bclelis.git
 
    cd desafio-xadrez-bclelis.git
