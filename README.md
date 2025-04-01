@@ -19,7 +19,7 @@ Durante o desenvolvimento, as seguintes peças e comportamentos foram simulados:
 
 1. **Clone o repositório**:
 
-   git clone https://github.com/Cursos-TI/desafio-xadrez-bclelis.git
+   git clone https://github.com/Cursos-TI/desafio-xadrez-bclelis
 
    cd desafio-xadrez-bclelis.git
 3. **Compile o código com GCC**:
