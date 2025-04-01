@@ -19,10 +19,11 @@ Durante o desenvolvimento, as seguintes peças e comportamentos foram simulados:
 
 1. **Clone o repositório**:
    git clone https://github.com/Cursos-TI/desafio-xadrez-bclelis.git
+
    cd desafio-xadrez-bclelis.git
-2. **Compile o código com GCC**:
+3. **Compile o código com GCC**:
    gcc xadrez.c -o xadrez
-3. **Execute o programa**:
+4. **Execute o programa**:
    ./xadrez
 
 ## 🧠 Tecnologias e Conceitos Aplicados
