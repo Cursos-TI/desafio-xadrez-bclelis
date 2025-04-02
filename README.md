@@ -43,12 +43,18 @@ Durante o desenvolvimento, as seguintes peças e comportamentos foram simulados:
 ## 🗂️ Estrutura do Código
 
 // Funções recursivas:
+
 // - moverTorre()
+
 // - moverRainha()
+
 // - moverBispo()
 
+
 // Lógica do Cavalo:
+
 // - Movimento com loops aninhados, múltiplas variáveis e controle com break/continue
+
 
 // Bispo também com simulação via loop aninhado vertical/horizontal
 
